@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+        
+        body {
+            background-color: azure;
+            width: 100%;
+            position: relative;
+        }
+        
+        nav {
+            width: 100%;
+            height: 5rem;
+            z-index: 999;
+            position: sticky;
+            box-sizing: border-box;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0rem;
+            left: 0rem;
+            background-color: white;
+        }
+        
+        .search {
+            height: 2rem;
+            width: 20rem;
+            border-radius: 1rem;
+            border-color: transparent;
+            background-color: azure;
+            padding-left: 2rem;
+        }
+        
+        .Short {
+            position: relative;
+        }
+        
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .seacCon {
+            position: relative;
+        }
+        
+        .seacCon i {
+            position: absolute;
+            top: 0.5rem;
+            right: 2rem;
+        }
+        
+        .selectoption {
+            background-color: transparent;
+            font-size: 1rem;
+            border: none;
+        }
+        
+        select:focus {
+            border: 2px solid transparent;
+            background: transparent;
+            outline: none;
+        }
+        
+        .signbtn {
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .loginbtn {
+            background-color: none;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .privacy,
+        .policy {
+            width: 100%;
+            height: 4rem;
+            background-color: transparent;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 0.7rem;
+        }
+        
+        .policy {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .comunity {
+            height: 8rem;
+            width: 50rem;
+            background-color: transparent;
+            position: relative;
+            left: 20rem;
+            margin: 2rem 0;
+        }
+        
+        .yourprivacy {
+            height: 5rem;
+            width: 50rem;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .parent {
+            background-color: transparent;
+            width: 60rem;
+            position: relative;
+            height: 80rem;
+            left: 20rem;
+            top: 1rem;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        
+        .homebtn {
+            background-color: transparent;
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3rem;
+        }
+        
+        .homebtn button {
+            background-color: rgb(59, 54, 54);
+            width: 8rem;
+            height: 3rem;
+            border-radius: 4rem;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <!--Start NavBar-->
+        <span style="font-family: cursive; font-size: 3rem; transform: rotate(-5deg)">Dribble</span
+      >
+      <div class="icon">
+        <div class="seacCon">
+          <input class="search" type="search " placeholder="Search items" />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="
+              font-size: 1.2rem;
+              border-radius: 0.25rem;
+              height: 1rem;
+              width: 2rem;
+            "
+          ></i>
+        </div>
+        <div class="Short">
+          <div class="dropdown">
+            <select class="selectoption">
+              <option selected enabled="none">Short</option>
+              <option>Designers</option>
+              <option>Service</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="Short">
+        <div class="dropdown">
+          <select class="selectoption">
+            <option selected enabled="none">Explore</option>
+            <option>ProductDesign</option>
+            <option>WebDesign</option>
+            <option>Animation</option>
+            <option>Banding</option>
+            <option>Ilustration</option>
+            <option>Mobile</option>
+            <option>Print</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div>
+          <select class="selectoption">
+            <option selected enabled="none">HireTalent</option>
+            <option>Start a Project Brief</option>
+            <option>Explore Services</option>
+            <option>Browse Profiles</option>
+            <option>Post a full Time Job</option>
+          </select>
+          <span
+            ><a href="Signup.html"><button
+              class="signbtn"
+              style="
+                background-color: rgb(59, 54, 54);
+                width: 8rem;
+                height: 3rem;
+                border-radius: 4rem;
+                color: antiquewhite;
+              "
+            >
+              SignUp
+            </button></a></span
+          >
+          <span
+            ><a href="login.html"><button
+              class="loginbtn"
+              style="
+                background-color: rgb(59, 54, 54);
+                width: 8rem;
+                height: 3rem;
+                border-radius: 2rem;
+                color: antiquewhite;
+              "
+            >
+              Login
+            </button></a></span
+          >
+        </div>
+      </div>
+    </nav>
+    <!--End  NavBar-->
+    <div class="privacy">
+      <span style="padding-left: 2rem">Terms Of Service</span>
+        <span style="padding-left: 2rem">Privacy&Policy</span>
+        <span style="padding-left: 2rem">Cookie&Policy</span>
+        <span style="padding-left: 2rem">Code of Conduct</span>
+        </div>
+        <div class="policy">
+            <div style="
+          width: 10rem;
+          height: 3rem;
+          background-color: rgb(215, 199, 199);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3rem;
+        ">
+                Privacy And Policy
+            </div>
+        </div>
+        <div class="comunity">
+            <span style="
+          font-size: 3rem;
+          font-weight: bold;
+          padding-left: 2rem;
+          word-spacing: 1rem;
+        ">Our commitment to protecting</span
+      >
+      <div class="yourprivacy">
+        <span style="font-size: 3rem; font-weight: bold; word-spacing: 1rem"
+          >Your Privacy</span
+        >
+      </div>
+      <span style="padding-left: 6rem"
+        >Learn more about how Dribbble collects and uses data and your rights as
+        a Dribbble user.</span
+      >
+    </div>
+    <div class="parent">
+      <div class="updatedate"><span>Clone Date 02/10/2025</span></div>
+        <span style="
+          margin-top: 2rem;
+          text-transform: capitalize;
+          word-spacing: 0.2rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: bold;
+          color: rgb(81, 64, 64);
+        ">The following Dribbble Holdings Ltd. (together with its affiliated
+        companies and subsidiaries, collectively, “Dribbble,” “our,” “we,” or
+        “us”) terms of service, the Dribbble Pricing and Payment Terms (the
+        “Pricing and Payment Terms”), and Dribbble Community Guidelines, and our
+        additional standards, conditions, policies, guidelines and in-product
+        disclosures (collectively, these “Terms”), govern your access to and use
+        of any and all the dribbble.com internet site and any and all versions
+        and subdomains thereof and Dribbble applications (collectively, the
+        "Website"), as well as any and all content, functionality and services
+        offered on or through the Website or otherwise provided by Dribbble
+        (each a “Service” and collectively, the “Services”).</span
+      >
+      <span
+        style="
+          margin-top: 2rem;
+          text-transform: capitalize;
+          word-spacing: 0.5rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: bold;
+          color: rgb(81, 64, 64);
+        "
+        >Read these Terms to learn more about your rights and responsibilities
+        as a person that accesses or uses the Website and/or any Services
+        (“you”, “User” or “user”), provided that if you open an account on the
+        Services on behalf of an organization or other entity, then (i) "you and
+        “User” includes you and that entity, and (ii) you represent and warrant
+        that you are an authorized representative of the entity with the
+        authority to bind the entity to these Terms, and that you agree to these
+        Terms on the entity’s behalf. By accessing or using the Website or any
+        Services, or creating an account on the Website (an “Account”) and
+        checking the "I agree" (or similar) box, you (1) agree that you have
+        read, understood, and agree to be bound by the terms and conditions of
+        these Terms (including the Pricing and Payment Terms, and Dribbble
+        Community Guidelines, as updated by us from time to time, all of which
+        are incorporated by this reference into these Terms), (2) represent and
+        warrant that the information you provide is accurate and not misleading,
+        and (3) agree that you have read and acknowledge the collection and use
+        of your information as set forth in our privacy policy (the "Privacy
+        Policy"), whether or not you are a registered user of the Services. If
+        you do not want to agree to these Terms or the Privacy Policy, you must
+        not access or use the Website or any Services. For more detailed
+        policies surrounding the activity and usage on the Site, please access
+        the designated help articles herein.</span
+      >
+      <span
+        style="
+          margin-top: 2rem;
+          text-transform: capitalize;
+          word-spacing: 0.5rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: bold;
+          color: rgb(81, 64, 64);
+        "
+      >
+        Similarly, if you share or post any content or interact with any other
+        users in our community (e.g., by commenting on anyone or anything or
+        discussing or arranging for the provision or receipt of services ) in or
+        through the Website or our Services, your conduct will be subject to
+        applicable Dribbble Community Guidelines. We may offer promotions or
+        contests through the Website or any Services from time to time, and your
+        participation in these may also be subject to additional terms. To the
+        extent additional terms affect your access to or use the Website or any
+        Services, those terms (including, but not limited to, the Privacy Policy
+        noted above) are hereby incorporated by reference into these Terms.
+      </span>
+        <span style="
+          margin-top: 2rem;
+          text-transform: capitalize;
+          word-spacing: 0.5rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: bold;
+          color: rgb(81, 64, 64);
+        "><b style="color: black">1.Eligibility.</b> You may access or use the
+        Website and the Services only if you can form a binding contract with
+        us, and only in compliance with these Terms and all applicable local,
+        state, provincial, national, and international laws, rules and
+        regulations. Any use or access to any of the Website or the Services by
+        anyone under 13 is strictly prohibited and in violation of these Terms.
+        The Website and the Services are not available to any Users previously
+        removed from the Website or any Services by Dribbble.</span
+      >
+      <span
+        style="
+          margin-top: 2rem;
+          text-transform: capitalize;
+          word-spacing: 0.5rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: bold;
+          color: rgb(81, 64, 64);
+        "
+        ><b style="color: black">2.Services License.</b> Subject to the terms
+        and conditions of these Terms, you are hereby granted a non-exclusive,
+        limited, non-transferable, freely revocable right to use the Website and
+        the Services for your use only as permitted by the features of the
+        Website and the Services and by these Terms. Dribbble reserves all
+        rights not expressly granted herein in the Website and the Services.
+        Dribbble may revoke this right at any time for any reason or no reason.
+        You shall not access or use the Website or any Services other than as
+        expressly permitted by these Terms without our specific express written
+        consent.</span
+      >
+      <span
+        style="
+          margin-top: 2rem;
+          text-transform: capitalize;
+          word-spacing: 0.5rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: bold;
+          color: rgb(81, 64, 64);
+        "
+        ><b style="color: black">3.Your Account</b>Your Account. Your account
+        gives you access to the services and features of the Website and
+        Services that we may establish, maintain, and modify, from time to time
+        and in our sole discretion. We may maintain different types of accounts
+        for different types of Users (e.g., Dribbble Pro and Hiring Suite),
+        which may provide access to additional or different Services or features
+        of those Services. By connecting to the Website with a third-party
+        service (e.g., via Google account), you give us permission to access and
+        use your information from that service as permitted by that service, and
+        to store your login credentials for that service. You are responsible
+        for tracking all activity on your own account, and you agree to the
+        following:</span
+      >
+      <div class="homebtn">
+        <a href="index.html"><button>Home</button></a>
+      </div>
+    </div>
+    <script src="ecoomarce.js"></script>
+  </body>
+</html>

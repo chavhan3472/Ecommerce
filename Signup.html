@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f3f3f3;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+        
+        .btnlgn {
+            width: 40%;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .gimg {
+            width: 14rem;
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.1rem solid rgb(180, 180, 180);
+            border-radius: 0.89rem;
+            gap: 0.8rem;
+            cursor: pointer;
+        }
+        
+        .gimg button {
+            background-color: transparent;
+            border: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        
+        .gimg img {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+        
+        input[type="email"] {
+            background-color: transparent;
+            width: 12rem;
+            height: 2.5rem;
+            padding-left: 1rem;
+            border-radius: 1rem;
+            border: 0.1rem solid rgb(86, 46, 46);
+        }
+        
+        button {
+            width: 12rem;
+            height: 2.2rem;
+            border-radius: 1rem;
+            background-color: rgb(54, 45, 45);
+            color: rgb(114, 97, 97);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .useragrrement {
+            width: 18rem;
+            height: auto;
+            text-align: center;
+            line-height: 1.6rem;
+        }
+        
+        .useragrrement a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btnlgn">
+        <h1>Welcome to Dribbble</h1>
+        <span>To see more results, please sign in or create an account.</span>
+
+        <div class="gimg">
+            <img src="googlelogo.png" />
+            <a href="https://www.google.com/"><button>Continue With Google</button></a>
+        </div>
+
+        <span>Or</span>
+
+        <input type="email" placeholder="Enter Your Email" />
+
+        <a href="login.html"><button style="color: antiquewhite;">Continue</button></a>
+
+        <div class="useragrrement">
+            <span>
+                By continuing, you agree to our
+                <a href="terms.html">terms & policy</a>.
+        <br> Already have an account?
+        <a href="index.html">Go To Home</a>
+        </span>
+        </div>
+    </div>
+</body>
+
+</html>
