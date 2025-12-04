@@ -29,3 +29,10 @@ a.addEventListener("click", function() {
         b.style.display = "none";
     }
 });
+let ul = document.getElementsByClassName("Short")
+
+function shortmenu() {
+    ul.classList.toggle("Short")
+    console.log(ul)
+
+}
