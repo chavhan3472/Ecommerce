@@ -2,12 +2,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // product data (could be replaced by a fetch from an API)
     const products = [
-        { product_id: 1, name: "Smartphone", description: "High-end smartphone.", price: 599.99, image: "https://via.placeholder.com/600x400?text=Smartphone", category: "Electronics" },
-        { product_id: 2, name: "Laptop", description: "Powerful laptop.", price: 999.99, image: "https://via.placeholder.com/600x400?text=Laptop", category: "Electronics" },
-        { product_id: 3, name: "Wireless Headphones", description: "Noise-cancelling.", price: 149.99, image: "https://via.placeholder.com/600x400?text=Headphones", category: "Audio" },
-        { product_id: 4, name: "Smartwatch", description: "Fitness tracking.", price: 199.99, image: "https://via.placeholder.com/600x400?text=Smartwatch", category: "Wearables" },
-        { product_id: 5, name: "Wooden Table", description: "Handmade table.", price: 159.00, image: "https://via.placeholder.com/600x400?text=Table", category: "Home" },
-        { product_id: 6, name: "Cozy Sofa", description: "Comfortable sofa.", price: 299.00, image: "https://via.placeholder.com/600x400?text=Sofa", category: "Home" }
+        { product_id: 1, name: "Smartphone", description: "High-end smartphone.", price: 599.99, image: "https://rukminim2.flixcart.com/image/120/120/xif0q/mobile/o/d/1/-original-imahggetmzzanrty.jpeg?q=80", category: "Electronics" },
+        { product_id: 2, name: "Laptop", description: "Powerful laptop.", price: 999.99, image: "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/g/t/d/-original-imahg5fyqgdfhugy.jpeg?q=70", category: "Electronics" },
+        { product_id: 3, name: "Wireless Headphones", description: "Noise-cancelling.", price: 149.99, image: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/4/k/a/-original-imahgnf4ufvcrvwt.jpeg?q=70", category: "Audio" },
+        { product_id: 4, name: "Smartwatch", description: "Fitness tracking.", price: 199.99, image: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/u/j/k/-original-imagx8ncm5ra8nmg.jpeg?q=70", category: "Wearables" },
+        { product_id: 5, name: "Wooden Table", description: "Handmade table.", price: 159.00, image: "https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/y/h/z/-original-imahfurynyfpkefm.jpeg?q=70", category: "Home" },
+        { product_id: 6, name: "Cozy Sofa", description: "Comfortable sofa.", price: 299.00, image: "https://rukminim2.flixcart.com/image/612/612/xif0q/sofa-sectional/h/z/p/left-facing-160-coco-brown-244-polyester-no-70-yolo-left-aligned-original-imahhks6w6xenrtb.jpeg?q=70", category: "Home" }
     ];
 
     // DOM references
