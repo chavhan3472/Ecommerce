@@ -2,371 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ecoomarce — Modern Ecommerce</title>
+    <meta name="description" content="Simple responsive ecommerce landing page for Ecoomarce." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <style>
-        * {
-            padding: 0%;
-            margin: 0%;
-            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        }
-        
-        body {
-            background-color: azure;
-            width: 100%;
-            height: 50vh;
-            position: relative;
-        }
-        
-        nav {
-            width: 100%;
-            height: 5rem;
-            z-index: 10;
-            position: sticky;
-            box-sizing: border-box;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            top: 0rem;
-            left: 0rem;
-            background-color: white;
-        }
-        
-        .search {
-            height: 2rem;
-            width: 20rem;
-            border-radius: 1rem;
-            border-color: transparent;
-            background-color: azure;
-            padding-left: 2rem;
-        }
-        
-        .Short {
-            position: relative;
-        }
-        
-        .icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .seacCon {
-            position: relative;
-        }
-        
-        .seacCon i {
-            position: absolute;
-            top: 0.5rem;
-            right: 2rem;
-        }
-        
-        .selectoption {
-            background-color: transparent;
-            font-size: 1rem;
-            border: none;
-        }
-        
-        select:focus {
-            border: 2px solid transparent;
-            background: transparent;
-            outline: none;
-        }
-        
-        .signbtn {
-            background: transparent;
-            border: none;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .loginbtn {
-            background-color: none;
-            border: none;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .heading {
-            width: 100%;
-            height: 8rem;
-            background-color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 1.5rem;
-            /* z-index: 20; */
-        }
-        
-        .realted {
-            background-color: transparent;
-            width: 35%;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .realted button {
-            background-color: transparent;
-            border: none;
-            color: rgb(62, 47, 47);
-        }
-        
-        .main {
-            width: 80%;
-            height: 40rem;
-            background-color: rgb(214, 234, 234);
-            position: absolute;
-            left: 9rem;
-            top: 15rem;
-        }
-        
-        .popular {
-            background-color: transparent;
-            height: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .btnlgn {
-            width: 40%;
-            height: max-content;
-            background-color: rgb(255, 255, 255);
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 30;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 2rem;
-            display: none;
-            cursor: pointer;
-        }
-        
-        .gimg {
-            width: 12rem;
-            height: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 2px solid transparent;
-            border-radius: 0.89rem;
-        }
-        
-        .gimg button {
-            padding-right: 1rem;
-            background-color: transparent;
-            border: none;
-        }
-        
-        .gimg img {
-            padding-left: 1rem;
-        }
-        
-        .useragrrement {
-            width: 20rem;
-            height: 6rem;
-            background-color: transparent;
-            text-transform: capitalize;
-            padding-left: 5rem;
-            line-height: 2rem;
-        }
-        
-        input[type="email"] {
-            background-color: transparent;
-            width: 10rem;
-            height: 3rem;
-            padding-left: 3rem;
-            border-radius: 1rem;
-            border: 0.1rem solid rgb(86, 46, 46);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="btnlgn">
-        <!---Start  login page-->
-        <h1>Welcome to Dribbble</h1>
-        <span>To see more results, please sign in or create an account.</span>
-        <div class="gimg">
-            <img src="googlelogo.png" style="width: 1rem; height: 1rem; background-color: transparent" />
-            <a href="https://www.google.com/"><button>Continue With Google</button></a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Ecoomarce</a>
+            <form class="search-form" action="#" aria-label="Search products">
+                <input type="search" placeholder="Search products, categories..." />
+                <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav class="nav">
+                <a href="Signup.html" class="btn secondary">Sign up</a>
+                <a href="login.html" class="btn">Login</a>
+            </nav>
         </div>
-        <span>Or</span>
-        <input type="email" placeholder="Enter Your Email" />
-        <button style="
-          width: 10rem;
-          height: 2.2rem;
-          border-radius: 1rem;
-          background-color: rgb(54, 45, 45);
-          color: antiquewhite;
-          cursor: pointer;
-        ">
-        Continue
-      </button>
-        <div class="useragrrement">
-            <span>By continuing, you agree to our
-          <a href="terms.html">terms and policy</a> Already have an account?
-          <a href="login.html">Login</a></span
-        >
-      </div>
-    </div>
-    <!---End login page-->
-    <nav class="nav">
-      <!--Start NavBar-->
-      <span
-        style="font-family: cursive; font-size: 3rem; transform: rotate(-5deg)"
-        >Dribble</span
-      >
-      <div class="icon">
-        <div class="seacCon">
-          <input class="search" type="search " placeholder="Search items" />
-          <i
-            class="fa-solid fa-magnifying-glass"
-            style="
-              font-size: 1.2rem;
-              border-radius: 0.25rem;
-              height: 1rem;
-              width: 2rem;
-            "
-          ></i>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>Build your online store with Ecoomarce</h1>
+                    <p>Responsive, fast and easy to customize. Perfect for small shops and portfolios.</p>
+                    <div class="hero-cta">
+                        <a href="Signup.html" class="btn">Get Started</a>
+                        <a href="terms.html" class="link">Learn more</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://via.placeholder.com/520x360.png?text=Featured+Product" alt="Featured product" />
+                </div>
+            </div>
+        </section>
+
+        <section class="products container">
+            <h2 class="section-title">Popular products</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x300.png?text=Product+1" alt="Product 1" />
+                    <div class="card-body">
+                        <h3>Classic Chair</h3>
+                        <p class="price">$79</p>
+                        <a href="#" class="btn small">Add to cart</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x300.png?text=Product+2" alt="Product 2" />
+                    <div class="card-body">
+                        <h3>Modern Lamp</h3>
+                        <p class="price">$49</p>
+                        <a href="#" class="btn small">Add to cart</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x300.png?text=Product+3" alt="Product 3" />
+                    <div class="card-body">
+                        <h3>Wooden Table</h3>
+                        <p class="price">$159</p>
+                        <a href="#" class="btn small">Add to cart</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x300.png?text=Product+4" alt="Product 4" />
+                    <div class="card-body">
+                        <h3>Cozy Sofa</h3>
+                        <p class="price">$299</p>
+                        <a href="#" class="btn small">Add to cart</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Ecoomarce</strong>
+                <p>Small shop starter template — made with ❤️</p>
+            </div>
+            <div class="footer-links">
+                <a href="terms.html">Terms</a>
+                <a href="forgetpassword.html">Forgot password</a>
+                <a href="Signup.html">Sign up</a>
+            </div>
         </div>
-        <div class="Short">
-          <div class="dropdown">
-            <select class="selectoption">
-              <option selected enabled="none">Short</option>
-              <option>Designers</option>
-              <option>Service</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="Short">
-        <div class="dropdown">
-          <select class="selectoption">
-            <option selected enabled="none">Explore</option>
-            <option>ProductDesign</option>
-            <option>WebDesign</option>
-            <option>Animation</option>
-            <option>Banding</option>
-            <option>Ilustration</option>
-            <option>Mobile</option>
-            <option>Print</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <div>
-          <select class="selectoption">
-            <option selected enabled="none">HireTalent</option>
-            <option>Start a Project Brief</option>
-            <option>Explore Services</option>
-            <option>Browse Profiles</option>
-            <option>Post a full Time Job</option>
-          </select>
-          <span
-            ><button
-              class="signbtn"
-              style="
-                background-color: rgb(59, 54, 54);
-                width: 8rem;
-                height: 3rem;
-                border-radius: 4rem;
-                color: antiquewhite;
-                cursor: pointer;
-              "
-            >
-              SignUp
-            </button></span
-          >
-          <span
-            ><a href="login.html"><button
-              class="loginbtn"
-              style="
-                background-color: rgb(59, 54, 54);
-                width: 8rem;
-                height: 3rem;
-                border-radius: 2rem;
-                color: antiquewhite;
-                cursor: pointer;
-              "
-            >
-              Login
-            </button></a></span
-          >
-        </div>
-      </div>
-    </nav>
-    <!--End  NavBar-->
-    <div class="heading">
-      <!--Ecoomarce Heading Start-->
-      <h1>Ecommerce</h1>
-      <span style="color: rgb(125, 110, 89)"
-        >Discover ecommerce designs for inspiration</span
-      >
-      <div class="realted">
-        <span>Realted:</span>
-            <span><button>Shop</button></span>
-            <span><button>Store</button></span>
-            <span><button>e-coomarce</button></span>
-            <span><button>Online-Store</button></span>
-            <span><button>Cart</button></span>
-            <span><button>Online-Shop</button></span>
-        </div>
-    </div>
-    <!--End Heading Start-->
-    <div class="main">
-        <!--main start-->
-        <div class="popular">
-            <select>
-          <option selected enabled>popular</option>
-          <option>New &Northway</option>
-        </select>
-            <a href="demo"><button style="background-color: transparent; border: none">
-            Product&Design
-          </button></a
-        >
-        <a href="demo"
-          ><button style="background-color: transparent; border: none">
-            Discover
-          </button></a
-        >
-        <a href="demo"
-          ><button style="background-color: transparent; border: none">
-            Animation
-          </button></a
-        >
-        <a href="demo"
-          ><button style="background-color: transparent; border: none">
-            Branding
-          </button></a
-        >
-        <a href="demo"
-          ><button style="background-color: transparent; border: none">
-            lllustration
-          </button></a
-        >
-        <a href="demo"
-          ><button style="background-color: transparent; border: none">
-            Mobile
-          </button></a
-        >
-        <a href="demo"
-          ><button style="background-color: transparent; border: none">
-            Print
-          </button></a
-        >
-      </div>
-    </div>
-    <!--main End-->
+    </footer>
+
     <script src="ecommerce.js"></script>
-  </body>
+</body>
+
 </html>
